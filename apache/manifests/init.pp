@@ -1,5 +1,6 @@
 class apache inherits motd{
-		package { 'httpd':
+		package { 'installing httpd server on redhat linux':
+			  name => httpd,
 			  ensure => present,
 			  before => File['/var/www/html/index.html'],
 			}
